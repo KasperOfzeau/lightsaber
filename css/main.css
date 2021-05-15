@@ -19,26 +19,26 @@
     font-family: 'Days One', arial;
     text-transform: uppercase;
     font-size: 1.5rem;
+    overflow: hidden;
   }
 
   /* The color pickers */
   
-  [name="color"] {
-    grid-row: 1 / 2;
+  #colors {
+    grid-row: 1;
     align-self: end;
     margin: 0.5em;
-  }
-  
-  label:not(.hilt) {
-    color: white;
-    font-weight: bold;
-    align-self: start;
+    font-family: 'Days One', arial;
+    font-size: 25px;
+    color: rgb(255, 238, 0);
+    padding: 0.25em 0.5em;
+    background: #000;
   }
   
   /* Lightsaber styling */
   
   .lightsaber {
-    margin-top: 25vh;
+    margin-top: 100vh;
     grid-column: 1 / -1;
     position: relative;
   }
@@ -127,67 +127,48 @@
   }
   
   /* change the color */
+
+  #white {
+    --blade-lightness: 0%;
+    --blade-hue: 0;
+  }
   
-  #green:checked ~ .lightsaber {
+  #green {
     --blade-hue: 120;
   }
   
-  #blue:checked ~ .lightsaber {
+  #blue {
     --blade-hue: 195;
   }
   
-  #yellow:checked ~ .lightsaber {
+  #yellow {
     --blade-hue: 60;
   }
   
-  #purple:checked ~ .lightsaber {
+  #purple {
     --blade-hue: 290;
   }
   
-  #red:checked ~ .lightsaber {
+  #red {
     --blade-hue: 360;
   }
   
-  #darksaber:checked ~ .lightsaber {
+  #darksaber {
     --blade-lightness: 100%;
   }
   
-  #darksaber:checked ~ .lightsaber .blade {
+  #darksaber .blade {
     border-radius: 100% / 500px 10px 0 0;
   }
   
-  #darksaber:checked ~ .lightsaber .blade::before {
+  #darksaber .blade::before {
     background: black;
   }
-  
-  /* play sound */
-  
-  embed {
-    display: none;
-    position: absolute;
-    opacity: 0;
-    pointer-events: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  #on-off:checked ~ embed {
-    display: block;
-  }
-  
-  
-  /* YT link */
-  .yt {
-    color: hsl(0 0% 100% / .5);
-    font-size: 1rem;
-    padding: 1em;
-    margin: 0 0 1em 0;
-    grid-column: 1 / -1;
-  }
-  
-  .yt:hover {
-    color: white;
-    text-shadow:
-      0 0 .5em hsl( var(--blade-hue) 50% 50%),
-      0 0 1em hsl( var(--blade-hue) 50% 50% / .75);
+
+  /* RESPONSIVNES */
+
+  @media only screen and (max-width: 880px) {
+    .lightsaber {
+      margin-top: 120vh;
+    }
   }
