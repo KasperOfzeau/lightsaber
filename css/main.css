@@ -22,7 +22,21 @@
     overflow: hidden;
   }
 
-  /* The color pickers */
+  /* MUTE BUTTON */
+
+  #muteButton {
+    grid-row: 1;
+    grid-column: 6;
+    margin: 0.5em 0 0 0;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  #muteButton:hover {
+    cursor: pointer;
+  }
+
+  /* SLECT BOX */
   
   #colors {
     grid-row: 1;
@@ -35,7 +49,7 @@
     background: #000;
   }
   
-  /* Lightsaber styling */
+  /* LIGHTSABER STYLE */
   
   .lightsaber {
     margin-top: 100vh;
@@ -116,7 +130,7 @@
     }
   }
   
-  /* Turn lightsaber on and off */
+  /* ON AND OFF BUTTON LIGHTSABER */
   
   #on-off:not(:checked) + .blade {
     transform: scaleY(0);
@@ -126,7 +140,7 @@
     transform: scaleY(1);
   }
   
-  /* change the color */
+  /* LIGHTSABER COLORS */
 
   #white {
     --blade-lightness: 0%;
