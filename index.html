@@ -11,24 +11,20 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
     <body>
-        <label for="green">Green</label>
-        <input type="radio" id="green" name="color" checked>
-        <label for="blue">Blue</label>
-        <input type="radio" id="blue" name="color">
-        <label for="yellow">Yellow</label>
-        <input type="radio" id="yellow" name="color">
-        <label for="purple">Purple</label>
-        <input type="radio" id="purple" name="color">
-        <label for="red">Red</label>
-        <input type="radio" id="red" name="color">
-        <label for="darksaber">Darksaber</label>
-        <input type="radio" id="darksaber" name="color">
+        <select id="colors">
+            <option value="" disabled selected hidden>Choose a color</option>
+            <option value="green" name="color">Green</option>
+            <option value="blue" name="color">Blue</option>
+            <option value="yellow" name="color">Yellow</option>
+            <option value="purple" name="color">Purple</option>
+            <option value="red" name="color">Red</option>
+            <option value="darksaber" name="color">Darksaber</option>
+        </select>
 
-        <div class="lightsaber">
-        <input type="checkbox" id="on-off">
-        <div class="blade"></div>
-        <label class="hilt" for="on-off">
-        </label>
+        <div id="white" class="lightsaber">
+            <input type="checkbox" id="on-off">
+            <div class="blade"></div>
+            <label class="hilt" for="on-off"></label>
         </div>
 
         <!-- JS -->
