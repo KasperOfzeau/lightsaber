@@ -1,6 +1,6 @@
 # lightsaber
 
-A full stack todo list web application using Laravel and Vue.js.
+CSS and Javascript lightsaber with sound
 
 <img src="lightsaber.jpg" alt="img_website">
 
@@ -10,8 +10,9 @@ A full stack todo list web application using Laravel and Vue.js.
 2. Choose a color in the select box in the upper left corner
 3. Click on the lightsaber 
 4. May the force be with you!
+5. Click on the lightsaber again to turn the power down
 
-In the upper right concer you can mute the sound effects
+In the upper right corner you can mute the sound effects.
 
 ## Authors
 
