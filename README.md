@@ -11,7 +11,7 @@ CSS and Javascript lightsaber with sound
 3. Click on the lightsaber 
 4. May the force be with you!
 
-In the upper right concer you can mute the sound effects
+In the upper right corner you can mute the sound effects.
 
 ## Authors
 
