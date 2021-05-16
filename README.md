@@ -1,6 +1,6 @@
 # lightsaber
 
-A full stack todo list web application using Laravel and Vue.js.
+CSS and Javascript lightsaber with sound
 
 <img src="lightsaber.jpg" alt="img_website">
 
