@@ -10,6 +10,7 @@ CSS and Javascript lightsaber with sound
 2. Choose a color in the select box in the upper left corner
 3. Click on the lightsaber 
 4. May the force be with you!
+5. Click on the lightsaber again to turn the power down
 
 In the upper right corner you can mute the sound effects.
 
