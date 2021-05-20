@@ -64,7 +64,6 @@
   }
   
   .hilt {
-    cursor: pointer;
     display: block;
     width: 1.15rem;
     height: 7rem;
@@ -74,7 +73,7 @@
     background-size: cover;
   }
 
-  .hilt:hover {
+  .hilt.hover:hover {
     cursor: pointer;
   }
   

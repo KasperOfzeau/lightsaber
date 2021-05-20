@@ -28,6 +28,7 @@ const playPowerDown = () => {
 
 const colorSelect = (e) => {
     lightsaber.id =  e.target.value;
+    hilt.classList.add('hover');
 }
 
 const changeVolume = () => {
